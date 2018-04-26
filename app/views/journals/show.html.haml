@@ -1,5 +1,7 @@
 %p#notice= notice
 %p
+  = image_tag @journal.image.url(:medium)
+%p
   %strong Body:
   = @journal.body
 = link_to 'Edit', edit_journal_path(@journal)

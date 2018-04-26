@@ -8,6 +8,7 @@
   %tbody
     - @journals.each do |journal|
       %tr
+        %td= image_tag journal.image.url(:thumb)
         %td= journal.body
         %td= link_to 'Show', journal
         %td= link_to 'Edit', edit_journal_path(journal)
