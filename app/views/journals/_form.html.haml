@@ -1,0 +1,6 @@
+= simple_form_for(@journal) do |f|
+  = f.error_notification
+  .form-inputs
+    = f.input :body
+  .form-actions
+    = f.button :submit

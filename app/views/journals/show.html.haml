@@ -1,0 +1,7 @@
+%p#notice= notice
+%p
+  %strong Body:
+  = @journal.body
+= link_to 'Edit', edit_journal_path(@journal)
+|
+= link_to 'Back', journals_path
